@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Contracts.Class1" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Hch.iDisk.Contracts.IUserService">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAEEAACAAACIAQABAAAAAAAQACAIAEA=</HashCode>
+      <FileName>IUserService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Hch.iDisk.Contracts.IFileService">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACgBCAAAQIAAAIAAAAAgAAAgAAAAAAIAAEEABAAAAA=</HashCode>
+      <FileName>IFileService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Hch.iDisk.Contracts.IFSService">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAACAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IFSService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

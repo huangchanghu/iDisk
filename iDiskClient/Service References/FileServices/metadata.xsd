@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="Hch.iDisk.WCF.Contracts" elementFormDefault="qualified" targetNamespace="Hch.iDisk.WCF.Contracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://127.0.0.1:8888/fileservice/metadata?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" />
+  <xs:element name="AddFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="file" nillable="true" type="q1:File" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="user" nillable="true" type="q2:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="file" nillable="true" type="q3:File" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="user" nillable="true" type="q4:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="file" nillable="true" type="q5:File" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="user" nillable="true" type="q6:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckFileById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="file" nillable="true" type="q7:File" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="user" nillable="true" type="q8:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckFileByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckFileByIdResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckFileByName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="file" nillable="true" type="q9:File" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="user" nillable="true" type="q10:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckFileByNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckFileByNameResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUpLoadUrl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="file" nillable="true" type="q11:File" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="user" nillable="true" type="q12:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUpLoadUrlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUpLoadUrlResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDownLoadUrl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="file" nillable="true" type="q13:File" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="user" nillable="true" type="q14:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDownLoadUrlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDownLoadUrlResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryFiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="where" nillable="true" type="xs:string" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="user" nillable="true" type="q15:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryFilesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="QueryFilesResult" nillable="true" type="q16:ArrayOfFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryFilesAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="where" nillable="true" type="xs:string" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="user" nillable="true" type="q17:User" />
+        <xs:element minOccurs="0" name="userId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryFilesAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="QueryFilesAdminResult" nillable="true" type="q18:ArrayOfFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="user" nillable="true" type="q19:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="GetFileResult" nillable="true" type="q20:File" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddDirtory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="dir" nillable="true" type="q21:Dirtory" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="user" nillable="true" type="q22:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddDirtoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddDirtoryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteDirtory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="dir" nillable="true" type="q23:Dirtory" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="user" nillable="true" type="q24:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteDirtoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteDirtoryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDirtory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="dir" nillable="true" type="q25:Dirtory" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="user" nillable="true" type="q26:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDirtoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateDirtoryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDirtory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="user" nillable="true" type="q27:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDirtoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" minOccurs="0" name="GetDirtoryResult" nillable="true" type="q28:Dirtory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

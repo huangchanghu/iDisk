@@ -1,0 +1,10 @@
+C:\Documents and Settings\cc\桌面\iDisk\iDiskFileServer\bin\Debug\iDiskFileServer.exe.config
+C:\Documents and Settings\cc\桌面\iDisk\iDiskFileServer\bin\Debug\iDiskFileServer.exe
+C:\Documents and Settings\cc\桌面\iDisk\iDiskFileServer\bin\Debug\iDiskFileServer.pdb
+C:\Documents and Settings\cc\桌面\iDisk\iDiskFileServer\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cc\桌面\iDisk\iDiskFileServer\obj\x86\Debug\iDiskFileServer.Properties.Resources.resources
+C:\Documents and Settings\cc\桌面\iDisk\iDiskFileServer\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\cc\桌面\iDisk\iDiskFileServer\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\cc\桌面\iDisk\iDiskFileServer\obj\x86\Debug\iDiskFileServer.exe
+C:\Documents and Settings\cc\桌面\iDisk\iDiskFileServer\obj\x86\Debug\iDiskFileServer.pdb
+C:\Documents and Settings\cc\桌面\iDisk\iDiskFileServer\obj\x86\Debug\iDiskFileServer.Form1.resources

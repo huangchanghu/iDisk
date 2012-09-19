@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="iDiskClient.fmMain" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ERSFcKhjCWSIg3ACAIT5CCECXJEQoktBhgDnrzEQLSE=</HashCode>
+      <FileName>fmMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.frmAdmin" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIEAAAAAKEgACAEAKCgAAgCBAIIAIEQAALkAQAACCA=</HashCode>
+      <FileName>frmAdmin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.frmBase" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>frmBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.frmEditDirtory" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQACABABEIAASgIEGCAAAAAAEAAAAAAFAABAA=</HashCode>
+      <FileName>frmEditDirtory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.frmEditFile" Collapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAQACBBABEAAgCAIEACAAAAAAEAAgMAAMAIAAA=</HashCode>
+      <FileName>frmEditFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.frmLogin" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAAEAQACAAABAAAAGAACACAIAAAAAAgAAVEAAABQI=</HashCode>
+      <FileName>frmLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.frmRegister" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQEACAAABEAAACAgEACAQAAAAkABAAgAAAABQE=</HashCode>
+      <FileName>frmRegister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.frmSelectDirtory" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAIAAgAACAhAAEAACDAAMACBAABAEAAAABgAQCAAAA=</HashCode>
+      <FileName>frmSelectDirtory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.Program" Collapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.Properties.Resources" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQJAQAoIAAAAAAAAAgABEAAAAQAAAAACAAAAAAAgCII=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.Properties.Settings" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.FileServices.File" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAADAQACAAABAEAAAAAIACAAgQCAQggkAEAAgAIgAAA=</HashCode>
+      <FileName>Service References\FileServices\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iDiskClient.FileServices.User" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAADAQAAAAAAAAAASBAAhAAIAAAEEAAgAAIACAA=</HashCode>
+      <FileName>Service References\FileServices\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iDiskClient.FileServices.Dirtory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiCRAIACAAACAAAAAAAAACAAhAgIAAAEACAIAAIAEAA=</HashCode>
+      <FileName>Service References\FileServices\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iDiskClient.FileServices.FileServiceClient" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACgBCAAAQIAAAIAAAAAAAAAgAAAAAAIAAEEABAAAAA=</HashCode>
+      <FileName>Service References\FileServices\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iDiskClient.UserServices.User" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAADAQAAAAAAAAAASBAAhAAIAAAEEAAgAAIACAA=</HashCode>
+      <FileName>Service References\UserServices\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iDiskClient.UserServices.FriendTemp" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAEACQAAAAAAAAAAIAAAAgAIIAAAEEAAAAAIAQAA=</HashCode>
+      <FileName>Service References\UserServices\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iDiskClient.UserServices.FriendTempV" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAMAEACQAAAAAQAAAAIAAAAgAIIAAAEEAAAAAIAQAE=</HashCode>
+      <FileName>Service References\UserServices\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iDiskClient.UserServices.UserServiceClient" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAEEAACAAACIAQABAAAAAAAQACAIAEA=</HashCode>
+      <FileName>Service References\UserServices\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="iDiskClient.UC.ListViewItem" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>UC\ListViewItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.UC.TreeNode" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>UC\TreeNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.UC.ucFormBase" Collapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAACAgEAAAACCAAAACAAAAAAAAAABgAQCAAAA=</HashCode>
+      <FileName>UC\ucFormBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.Utility">
+    <Position X="12.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Utility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.DownLoader" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAEFAAIABABAQAAACUAEAMUxAgiEYCFABAAAA=</HashCode>
+      <FileName>FileTrans\DownLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.DownLoadEventArgs" Collapsed="true">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAABAAAQAAAAUAAAIEgAACEIAAABAAAA=</HashCode>
+      <FileName>FileTrans\DownLoadEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.HttpDownLoader">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAACCQAAAAA=</HashCode>
+      <FileName>FileTrans\HttpDownLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iDiskClient.TcpDownLoader">
+    <Position X="2.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAACAAAAAAA=</HashCode>
+      <FileName>TcpDownLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="iDiskClient.FileServices.FileService" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACgBCAAAQIAAAIAAAAAAAAAgAAAAAAIAAEEABAAAAA=</HashCode>
+      <FileName>Service References\FileServices\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="iDiskClient.FileServices.FileServiceChannel" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\FileServices\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="iDiskClient.UserServices.UserService" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAEEAACAAACIAQABAAAAAAAQACAIAEA=</HashCode>
+      <FileName>Service References\UserServices\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="iDiskClient.UserServices.UserServiceChannel" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\UserServices\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="iDiskClient.FileVisibility">
+    <Position X="9.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAACAAAAAAAQAA=</HashCode>
+      <FileName>FileVisibility.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="iDiskClient.DownLoadEventHandler" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileTrans\DownLoad.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

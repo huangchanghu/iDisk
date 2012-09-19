@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e7eede7a-3f67-4501-9186-edb7fa748952" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://127.0.0.1:8888/userservice/metadata" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UserService.wsdl" MetadataType="Wsdl" ID="115b9637-b172-4b76-9e6b-7b0e592f8bec" SourceId="1" SourceUrl="http://127.0.0.1:8888/userservice/metadata" />
+    <MetadataFile FileName="metadata.xsd" MetadataType="Schema" ID="1deb465d-93ce-40e0-8f02-25679c4250f5" SourceId="1" SourceUrl="http://127.0.0.1:8888/userservice/metadata?xsd=xsd0" />
+    <MetadataFile FileName="metadata1.xsd" MetadataType="Schema" ID="760ff6d4-f5be-4204-b508-358469eb5767" SourceId="1" SourceUrl="http://127.0.0.1:8888/userservice/metadata?xsd=xsd1" />
+    <MetadataFile FileName="metadata2.xsd" MetadataType="Schema" ID="dc4481d4-4b28-441f-8c45-2d432ab6cc0c" SourceId="1" SourceUrl="http://127.0.0.1:8888/userservice/metadata?xsd=xsd2" />
+    <MetadataFile FileName="metadata.wsdl" MetadataType="Wsdl" ID="77017152-61b7-432f-a4d0-38b943871728" SourceId="1" SourceUrl="http://127.0.0.1:8888/userservice/metadata?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

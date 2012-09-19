@@ -1,0 +1,22 @@
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\bin\Debug\iDiskClient.exe.config
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\bin\Debug\iDiskClient.exe
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\bin\Debug\iDiskClient.pdb
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\iDiskClient.fmMain.resources
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\iDiskClient.frmAdmin.resources
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\iDiskClient.frmBase.resources
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\iDiskClient.frmEditDirtory.resources
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\iDiskClient.frmEditFile.resources
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\iDiskClient.frmLogin.resources
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\iDiskClient.frmRegister.resources
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\iDiskClient.frmSelectDirtory.resources
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\iDiskClient.Properties.Resources.resources
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\iDiskClient.UC.ucFormBase.resources
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\iDiskClient.exe
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\iDiskClient.pdb
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\iDiskClient.frmConfig.resources
+C:\Documents and Settings\cc\桌面\iDisk\iDiskClient\obj\x86\Debug\iDiskClient.Test.resources
+E:\资料\编程\VSProjects\Project\iDisk\iDiskClient\bin\Debug\iDiskClient.exe.config
+F:\资料\编程\VSProjects\Project\iDisk\iDiskClient\bin\Debug\iDiskClient.exe.config

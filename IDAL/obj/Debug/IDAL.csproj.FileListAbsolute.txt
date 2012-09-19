@@ -1,0 +1,7 @@
+C:\Documents and Settings\cc\桌面\iDisk\IDAL\bin\Debug\Hch.iDisk.IDAL.dll
+C:\Documents and Settings\cc\桌面\iDisk\IDAL\bin\Debug\Hch.iDisk.IDAL.pdb
+C:\Documents and Settings\cc\桌面\iDisk\IDAL\bin\Debug\Hch.iDisk.Model.dll
+C:\Documents and Settings\cc\桌面\iDisk\IDAL\bin\Debug\Hch.iDisk.Model.pdb
+C:\Documents and Settings\cc\桌面\iDisk\IDAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cc\桌面\iDisk\IDAL\obj\Debug\Hch.iDisk.IDAL.dll
+C:\Documents and Settings\cc\桌面\iDisk\IDAL\obj\Debug\Hch.iDisk.IDAL.pdb

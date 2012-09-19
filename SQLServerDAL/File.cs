@@ -1,0 +1,270 @@
+using System;
+using System.Data;
+using System.Text;
+using System.Data.SqlClient;
+using Hch.iDisk.IDAL;
+using Maticsoft.DBUtility;//Please add references
+namespace Hch.iDisk.SQLServerDAL
+{
+    /// <summary>
+    /// 数据访问类:File
+    /// </summary>
+    public partial class File:IFile
+    {
+        public File()
+        {}
+        #region  Method
+
+        /// <summary>
+        /// 是否存在该记录
+        /// </summary>
+        public bool Exists(string FId,int FUserId)
+        {
+            StringBuilder strSql=new StringBuilder();
+            strSql.Append("select count(1) from File");
+            strSql.Append(" where FId=@FId and FUserId=@FUserId ");
+            SqlParameter[] parameters = {
+                    new SqlParameter("@FId", SqlDbType.VarChar,130),
+                    new SqlParameter("@FUserId", SqlDbType.Int,4)};
+            parameters[0].Value = FId;
+            parameters[1].Value = FUserId;
+
+            return DbHelperSQL.Exists(strSql.ToString(),parameters);
+        }
+
+
+        /// <summary>
+        /// 增加一条数据
+        /// </summary>
+        public void Add(Hch.iDisk.Model.File model)
+        {
+            StringBuilder strSql=new StringBuilder();
+            strSql.Append("insert into [File](");
+            strSql.Append("FId,DirId,FName,FDate,FSize,FVisibility,FUrl,FDesc,FUserId)");
+            strSql.Append(" values (");
+            strSql.Append("@FId,@DirId,@FName,@FDate,@FSize,@FVisibility,@FUrl,@FDesc,@FUserId)");
+            SqlParameter[] parameters = {
+                    new SqlParameter("@FId", SqlDbType.VarChar,130),
+                    new SqlParameter("@DirId", SqlDbType.Int,4),
+                    new SqlParameter("@FName", SqlDbType.VarChar,50),
+                    new SqlParameter("@FDate", SqlDbType.DateTime),
+                    new SqlParameter("@FSize", SqlDbType.BigInt,8),
+                    new SqlParameter("@FVisibility", SqlDbType.Int,4),
+                    new SqlParameter("@FUrl", SqlDbType.VarChar,200),
+                    new SqlParameter("@FDesc", SqlDbType.VarChar,100),
+                    new SqlParameter("@FUserId", SqlDbType.Int,4)};
+            parameters[0].Value = model.FId;
+            parameters[1].Value = model.DirId;
+            parameters[2].Value = model.FName;
+            parameters[3].Value = model.FDate;
+            parameters[4].Value = model.FSize;
+            parameters[5].Value = model.FVisibility;
+            parameters[6].Value = model.FUrl;
+            parameters[7].Value = model.FDesc;
+            parameters[8].Value = model.FUserId;
+
+            DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
+        }
+        /// <summary>
+        /// 更新一条数据
+        /// </summary>
+        public bool Update(Hch.iDisk.Model.File model)
+        {
+            StringBuilder strSql=new StringBuilder();
+            strSql.Append("update [File] set ");
+            strSql.Append("DirId=@DirId,");
+            strSql.Append("FName=@FName,");
+            strSql.Append("FDate=@FDate,");
+            strSql.Append("FSize=@FSize,");
+            strSql.Append("FVisibility=@FVisibility,");
+            strSql.Append("FUrl=@FUrl,");
+            strSql.Append("FDesc=@FDesc");
+            strSql.Append(" where FId=@FId and FUserId=@FUserId ");
+            SqlParameter[] parameters = {
+                    new SqlParameter("@DirId", SqlDbType.Int,4),
+                    new SqlParameter("@FName", SqlDbType.VarChar,50),
+                    new SqlParameter("@FDate", SqlDbType.DateTime),
+                    new SqlParameter("@FSize", SqlDbType.BigInt,8),
+                    new SqlParameter("@FVisibility", SqlDbType.Int,4),
+                    new SqlParameter("@FUrl", SqlDbType.VarChar,200),
+                    new SqlParameter("@FDesc", SqlDbType.VarChar,100),
+                    new SqlParameter("@FId", SqlDbType.VarChar,130),
+                    new SqlParameter("@FUserId", SqlDbType.Int,4)};
+            parameters[0].Value = model.DirId;
+            parameters[1].Value = model.FName;
+            parameters[2].Value = model.FDate;
+            parameters[3].Value = model.FSize;
+            parameters[4].Value = model.FVisibility;
+            parameters[5].Value = model.FUrl;
+            parameters[6].Value = model.FDesc;
+            parameters[7].Value = model.FId;
+            parameters[8].Value = model.FUserId;
+
+            int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
+            if (rows > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// 删除一条数据
+        /// </summary>
+        public bool Delete(string FId,int FUserId)
+        {
+            
+            StringBuilder strSql=new StringBuilder();
+            strSql.Append("delete from [File] ");
+            strSql.Append(" where FId=@FId and FUserId=@FUserId ");
+            SqlParameter[] parameters = {
+                    new SqlParameter("@FId", SqlDbType.VarChar,130),
+                    new SqlParameter("@FUserId", SqlDbType.Int,4)};
+            parameters[0].Value = FId;
+            parameters[1].Value = FUserId;
+
+            int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
+            if (rows > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        
+
+
+        /// <summary>
+        /// 得到一个对象实体
+        /// </summary>
+        public Hch.iDisk.Model.File GetModel(string FId,int FUserId)
+        {
+            
+            StringBuilder strSql=new StringBuilder();
+            strSql.Append("select  top 1 FId,DirId,FName,FDate,FSize,FVisibility,FUrl,FDesc,FUserId from File ");
+            strSql.Append(" where FId=@FId and FUserId=@FUserId ");
+            SqlParameter[] parameters = {
+                    new SqlParameter("@FId", SqlDbType.VarChar,130),
+                    new SqlParameter("@FUserId", SqlDbType.Int,4)};
+            parameters[0].Value = FId;
+            parameters[1].Value = FUserId;
+
+            Hch.iDisk.Model.File model=new Hch.iDisk.Model.File();
+            DataSet ds=DbHelperSQL.Query(strSql.ToString(),parameters);
+            if(ds.Tables[0].Rows.Count>0)
+            {
+                if(ds.Tables[0].Rows[0]["FId"]!=null)
+                {
+                model.FId=ds.Tables[0].Rows[0]["FId"].ToString();
+                }
+                if(ds.Tables[0].Rows[0]["DirId"].ToString()!="")
+                {
+                    model.DirId=int.Parse(ds.Tables[0].Rows[0]["DirId"].ToString());
+                }
+                if(ds.Tables[0].Rows[0]["FName"]!=null)
+                {
+                model.FName=ds.Tables[0].Rows[0]["FName"].ToString();
+                }
+                if(ds.Tables[0].Rows[0]["FDate"].ToString()!="")
+                {
+                    model.FDate=DateTime.Parse(ds.Tables[0].Rows[0]["FDate"].ToString());
+                }
+                if(ds.Tables[0].Rows[0]["FSize"].ToString()!="")
+                {
+                    model.FSize=long.Parse(ds.Tables[0].Rows[0]["FSize"].ToString());
+                }
+                if(ds.Tables[0].Rows[0]["FVisibility"].ToString()!="")
+                {
+                    model.FVisibility=int.Parse(ds.Tables[0].Rows[0]["FVisibility"].ToString());
+                }
+                if(ds.Tables[0].Rows[0]["FUrl"].ToString()!="")
+                {
+                    model.FUrl=ds.Tables[0].Rows[0]["FUrl"].ToString();
+                }
+                if(ds.Tables[0].Rows[0]["FDesc"]!=null)
+                {
+                model.FDesc=ds.Tables[0].Rows[0]["FDesc"].ToString();
+                }
+                if(ds.Tables[0].Rows[0]["FUserId"].ToString()!="")
+                {
+                    model.FUserId=int.Parse(ds.Tables[0].Rows[0]["FUserId"].ToString());
+                }
+                return model;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 获得数据列表
+        /// </summary>
+        public DataSet GetList(string strWhere)
+        {
+            StringBuilder strSql=new StringBuilder();
+            strSql.Append("select FId,DirId,FName,FDate,FSize,FVisibility,FUrl,FDesc,FUserId ");
+            strSql.Append(" FROM [File] ");
+            if(strWhere.Trim()!="")
+            {
+                strSql.Append(" where "+strWhere);
+            }
+            return DbHelperSQL.Query(strSql.ToString());
+        }
+
+        /// <summary>
+        /// 获得前几行数据
+        /// </summary>
+        public DataSet GetList(int Top,string strWhere,string filedOrder)
+        {
+            StringBuilder strSql=new StringBuilder();
+            strSql.Append("select ");
+            if(Top>0)
+            {
+                strSql.Append(" top "+Top.ToString());
+            }
+            strSql.Append(" FId,DirId,FName,FDate,FSize,FVisibility,FUrl,FDesc,FUserId ");
+            strSql.Append(" FROM [File] ");
+            if(strWhere.Trim()!="")
+            {
+                strSql.Append(" where "+strWhere);
+            }
+            strSql.Append(" order by " + filedOrder);
+            return DbHelperSQL.Query(strSql.ToString());
+        }
+
+        /*
+        /// <summary>
+        /// 分页获取数据列表
+        /// </summary>
+        public DataSet GetList(int PageSize,int PageIndex,string strWhere)
+        {
+            SqlParameter[] parameters = {
+                    new SqlParameter("@tblName", SqlDbType.VarChar, 255),
+                    new SqlParameter("@fldName", SqlDbType.VarChar, 255),
+                    new SqlParameter("@PageSize", SqlDbType.Int),
+                    new SqlParameter("@PageIndex", SqlDbType.Int),
+                    new SqlParameter("@IsReCount", SqlDbType.Bit),
+                    new SqlParameter("@OrderType", SqlDbType.Bit),
+                    new SqlParameter("@strWhere", SqlDbType.VarChar,1000),
+                    };
+            parameters[0].Value = "File";
+            parameters[1].Value = "FUserId";
+            parameters[2].Value = PageSize;
+            parameters[3].Value = PageIndex;
+            parameters[4].Value = 0;
+            parameters[5].Value = 0;
+            parameters[6].Value = strWhere;	
+            return DbHelperSQL.RunProcedure("UP_GetRecordByPage",parameters,"ds");
+        }*/
+
+        #endregion  Method
+
+    }
+}
+

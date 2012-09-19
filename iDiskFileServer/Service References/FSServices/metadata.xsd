@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="FileServer">
+    <xs:sequence>
+      <xs:element name="_fsdirtory" nillable="true" type="xs:string" />
+      <xs:element name="_fshost" nillable="true" type="xs:string" />
+      <xs:element name="_fsid" type="xs:int" />
+      <xs:element name="_fspass" nillable="true" type="xs:string" />
+      <xs:element name="_fssize" nillable="true" type="xs:long" />
+      <xs:element name="_fsvalidsize" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FileServer" nillable="true" type="tns:FileServer" />
+  <xs:complexType name="FileList">
+    <xs:sequence>
+      <xs:element name="_fileid" nillable="true" type="xs:string" />
+      <xs:element name="_serverid" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FileList" nillable="true" type="tns:FileList" />
+</xs:schema>

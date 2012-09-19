@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="Hch.iDisk.WCF.Contracts" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="Hch.iDisk.WCF.Contracts" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="Hch.iDisk.WCF.Contracts/Imports">
+      <xsd:import schemaLocation="http://127.0.0.1:8888/fileservice/metadata?xsd=xsd0" namespace="Hch.iDisk.WCF.Contracts" />
+      <xsd:import schemaLocation="http://127.0.0.1:8888/fileservice/metadata?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://127.0.0.1:8888/fileservice/metadata?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FileService_AddFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddFile" />
+  </wsdl:message>
+  <wsdl:message name="FileService_AddFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileService_DeleteFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFile" />
+  </wsdl:message>
+  <wsdl:message name="FileService_DeleteFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileService_UpdateFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFile" />
+  </wsdl:message>
+  <wsdl:message name="FileService_UpdateFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileService_CheckFileById_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckFileById" />
+  </wsdl:message>
+  <wsdl:message name="FileService_CheckFileById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckFileByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileService_CheckFileByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckFileByName" />
+  </wsdl:message>
+  <wsdl:message name="FileService_CheckFileByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckFileByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileService_GetUpLoadUrl_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUpLoadUrl" />
+  </wsdl:message>
+  <wsdl:message name="FileService_GetUpLoadUrl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUpLoadUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileService_GetDownLoadUrl_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDownLoadUrl" />
+  </wsdl:message>
+  <wsdl:message name="FileService_GetDownLoadUrl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDownLoadUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileService_QueryFiles_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryFiles" />
+  </wsdl:message>
+  <wsdl:message name="FileService_QueryFiles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryFilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileService_QueryFilesAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryFilesAdmin" />
+  </wsdl:message>
+  <wsdl:message name="FileService_QueryFilesAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryFilesAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileService_GetFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFile" />
+  </wsdl:message>
+  <wsdl:message name="FileService_GetFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileService_AddDirtory_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddDirtory" />
+  </wsdl:message>
+  <wsdl:message name="FileService_AddDirtory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDirtoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileService_DeleteDirtory_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDirtory" />
+  </wsdl:message>
+  <wsdl:message name="FileService_DeleteDirtory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDirtoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileService_UpdateDirtory_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDirtory" />
+  </wsdl:message>
+  <wsdl:message name="FileService_UpdateDirtory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDirtoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileService_GetDirtory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDirtory" />
+  </wsdl:message>
+  <wsdl:message name="FileService_GetDirtory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDirtoryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FileService">
+    <wsdl:operation name="AddFile">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/AddFile" message="tns:FileService_AddFile_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/AddFileResponse" message="tns:FileService_AddFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFile">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/DeleteFile" message="tns:FileService_DeleteFile_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/DeleteFileResponse" message="tns:FileService_DeleteFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFile">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/UpdateFile" message="tns:FileService_UpdateFile_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/UpdateFileResponse" message="tns:FileService_UpdateFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckFileById">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/CheckFileById" message="tns:FileService_CheckFileById_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/CheckFileByIdResponse" message="tns:FileService_CheckFileById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckFileByName">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/CheckFileByName" message="tns:FileService_CheckFileByName_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/CheckFileByNameResponse" message="tns:FileService_CheckFileByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUpLoadUrl">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/GetUpLoadUrl" message="tns:FileService_GetUpLoadUrl_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/GetUpLoadUrlResponse" message="tns:FileService_GetUpLoadUrl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDownLoadUrl">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/GetDownLoadUrl" message="tns:FileService_GetDownLoadUrl_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/GetDownLoadUrlResponse" message="tns:FileService_GetDownLoadUrl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryFiles">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/QueryFiles" message="tns:FileService_QueryFiles_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/QueryFilesResponse" message="tns:FileService_QueryFiles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryFilesAdmin">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/QueryFilesAdmin" message="tns:FileService_QueryFilesAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/QueryFilesAdminResponse" message="tns:FileService_QueryFilesAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFile">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/GetFile" message="tns:FileService_GetFile_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/GetFileResponse" message="tns:FileService_GetFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDirtory">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/AddDirtory" message="tns:FileService_AddDirtory_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/AddDirtoryResponse" message="tns:FileService_AddDirtory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDirtory">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/DeleteDirtory" message="tns:FileService_DeleteDirtory_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/DeleteDirtoryResponse" message="tns:FileService_DeleteDirtory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDirtory">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/UpdateDirtory" message="tns:FileService_UpdateDirtory_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/UpdateDirtoryResponse" message="tns:FileService_UpdateDirtory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDirtory">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/GetDirtory" message="tns:FileService_GetDirtory_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/FileService/GetDirtoryResponse" message="tns:FileService_GetDirtory_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

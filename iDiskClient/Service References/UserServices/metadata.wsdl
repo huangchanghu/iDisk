@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="Hch.iDisk.WCF.Contracts" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="Hch.iDisk.WCF.Contracts" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="Hch.iDisk.WCF.Contracts/Imports">
+      <xsd:import schemaLocation="http://127.0.0.1:8888/userservice/metadata?xsd=xsd0" namespace="Hch.iDisk.WCF.Contracts" />
+      <xsd:import schemaLocation="http://127.0.0.1:8888/userservice/metadata?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://127.0.0.1:8888/userservice/metadata?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Hch.iDisk.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="UserService_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="UserService_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="UserService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserService_UserExist_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserExist" />
+  </wsdl:message>
+  <wsdl:message name="UserService_UserExist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserService_DeleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="UserService_DeleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserService_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="UserService_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserService_QueryUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryUsers" />
+  </wsdl:message>
+  <wsdl:message name="UserService_QueryUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserService_QueryUserById_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryUserById" />
+  </wsdl:message>
+  <wsdl:message name="UserService_QueryUserById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryUserByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserService_AddFrientTemp_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddFrientTemp" />
+  </wsdl:message>
+  <wsdl:message name="UserService_AddFrientTemp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddFrientTempResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserService_DeleteFriend_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFriend" />
+  </wsdl:message>
+  <wsdl:message name="UserService_DeleteFriend_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFriendResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserService_CheckFriends_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckFriends" />
+  </wsdl:message>
+  <wsdl:message name="UserService_CheckFriends_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckFriendsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserService_CheckFriendsRefused_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckFriendsRefused" />
+  </wsdl:message>
+  <wsdl:message name="UserService_CheckFriendsRefused_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckFriendsRefusedResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserService_HandleFrind_InputMessage">
+    <wsdl:part name="parameters" element="tns:HandleFrind" />
+  </wsdl:message>
+  <wsdl:message name="UserService_HandleFrind_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HandleFrindResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserService_IsAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsAdmin" />
+  </wsdl:message>
+  <wsdl:message name="UserService_IsAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsAdminResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UserService">
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/Register" message="tns:UserService_Register_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/RegisterResponse" message="tns:UserService_Register_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/Login" message="tns:UserService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/LoginResponse" message="tns:UserService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserExist">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/UserExist" message="tns:UserService_UserExist_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/UserExistResponse" message="tns:UserService_UserExist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/DeleteUser" message="tns:UserService_DeleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/DeleteUserResponse" message="tns:UserService_DeleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/UpdateUser" message="tns:UserService_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/UpdateUserResponse" message="tns:UserService_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryUsers">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/QueryUsers" message="tns:UserService_QueryUsers_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/QueryUsersResponse" message="tns:UserService_QueryUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryUserById">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/QueryUserById" message="tns:UserService_QueryUserById_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/QueryUserByIdResponse" message="tns:UserService_QueryUserById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddFrientTemp">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/AddFrientTemp" message="tns:UserService_AddFrientTemp_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/AddFrientTempResponse" message="tns:UserService_AddFrientTemp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFriend">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/DeleteFriend" message="tns:UserService_DeleteFriend_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/DeleteFriendResponse" message="tns:UserService_DeleteFriend_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckFriends">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/CheckFriends" message="tns:UserService_CheckFriends_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/CheckFriendsResponse" message="tns:UserService_CheckFriends_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckFriendsRefused">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/CheckFriendsRefused" message="tns:UserService_CheckFriendsRefused_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/CheckFriendsRefusedResponse" message="tns:UserService_CheckFriendsRefused_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HandleFrind">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/HandleFrind" message="tns:UserService_HandleFrind_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/HandleFrindResponse" message="tns:UserService_HandleFrind_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsAdmin">
+      <wsdl:input wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/IsAdmin" message="tns:UserService_IsAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="Hch.iDisk.WCF.Contracts/UserService/IsAdminResponse" message="tns:UserService_IsAdmin_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,5 @@
+C:\Documents and Settings\cc\桌面\iDisk\Model\bin\Debug\Hch.iDisk.Model.dll
+C:\Documents and Settings\cc\桌面\iDisk\Model\bin\Debug\Hch.iDisk.Model.pdb
+C:\Documents and Settings\cc\桌面\iDisk\Model\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cc\桌面\iDisk\Model\obj\Debug\Hch.iDisk.Model.dll
+C:\Documents and Settings\cc\桌面\iDisk\Model\obj\Debug\Hch.iDisk.Model.pdb

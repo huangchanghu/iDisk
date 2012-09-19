@@ -1,0 +1,14 @@
+C:\Documents and Settings\cc\桌面\iDisk\SQLServerDAL\bin\Debug\Hch.iDisk.SQLServerDAL.dll
+C:\Documents and Settings\cc\桌面\iDisk\SQLServerDAL\bin\Debug\Hch.iDisk.SQLServerDAL.pdb
+C:\Documents and Settings\cc\桌面\iDisk\SQLServerDAL\bin\Debug\Hch.iDisk.DBUtility.dll
+C:\Documents and Settings\cc\桌面\iDisk\SQLServerDAL\bin\Debug\Hch.iDisk.IDAL.dll
+C:\Documents and Settings\cc\桌面\iDisk\SQLServerDAL\bin\Debug\Hch.iDisk.Model.dll
+C:\Documents and Settings\cc\桌面\iDisk\SQLServerDAL\bin\Debug\Maticsoft.Common.dll
+C:\Documents and Settings\cc\桌面\iDisk\SQLServerDAL\bin\Debug\MySql.Data.dll
+C:\Documents and Settings\cc\桌面\iDisk\SQLServerDAL\bin\Debug\System.Data.SQLite.dll
+C:\Documents and Settings\cc\桌面\iDisk\SQLServerDAL\bin\Debug\Hch.iDisk.DBUtility.pdb
+C:\Documents and Settings\cc\桌面\iDisk\SQLServerDAL\bin\Debug\Hch.iDisk.IDAL.pdb
+C:\Documents and Settings\cc\桌面\iDisk\SQLServerDAL\bin\Debug\Hch.iDisk.Model.pdb
+C:\Documents and Settings\cc\桌面\iDisk\SQLServerDAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\cc\桌面\iDisk\SQLServerDAL\obj\Debug\Hch.iDisk.SQLServerDAL.dll
+C:\Documents and Settings\cc\桌面\iDisk\SQLServerDAL\obj\Debug\Hch.iDisk.SQLServerDAL.pdb
